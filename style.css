@@ -1,0 +1,19 @@
+*{box-sizing:border-box; margin: 0; padding: 0;}
+body{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color: rgb(240, 237, 237); display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px;}
+.card{background: white; padding: 30px; border-radius: 12px; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 500px; text-align: center;}
+.hidden{ display: none! important; }
+.btn, .option-label{ display: block; width: 100%; padding: 12px;
+     margin: 10px 0; border-radius: 8px; cursor: pointer; 
+     transition: all 0.2s ease; text-align: left;}
+.btn { background-color: rgb(0, 0, 255); color: white; 
+    text-align: center; font-weight: bold; border: none;}
+.btn:hover{ background-color:blue;}
+.correct{ background-color: #d4edda ! important; 
+    border-color: #28a745 ! important; color: #155724 !important; font-weight: bold;}
+.incorrect{background-color: #f8d7da ! important; 
+    border-color: #dc3545 ! important; color: #721c24 !important;}
+.slide-in{ animation: slideup 0.4s ease-out forwards;}
+@keyframes slideup {from{opacity: 0; transform: translateY(20px)}to { opacity: 1; 
+    transform: translateY(0);}}
